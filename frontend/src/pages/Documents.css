@@ -1,0 +1,8 @@
+.filter-tabs { display: flex; gap: 4px; background: var(--neutral-200); padding: 4px; border-radius: var(--radius-sm); }
+.filter-tab { padding: 6px 14px; border: none; background: transparent; border-radius: 4px; font-size: 0.82rem; font-weight: 500; color: var(--neutral-700); transition: all 0.15s; }
+.filter-tab.active { background: white; color: var(--green-700); font-weight: 600; box-shadow: var(--shadow-sm); }
+.doc-title { font-weight: 500; color: var(--neutral-900); }
+.doc-desc { font-size: 0.75rem; color: var(--neutral-400); margin-top: 2px; }
+.action-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+textarea { font-family: var(--font-body); padding: 10px 13px; border: 1.5px solid var(--neutral-200); border-radius: var(--radius-sm); font-size: 0.9rem; outline: none; width: 100%; }
+textarea:focus { border-color: var(--green-500); box-shadow: 0 0 0 3px rgba(34,160,90,0.1); }
