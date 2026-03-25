@@ -5,3 +5,5 @@ db.sqlite3
 backend/media/
 
 	
+__pycache__/
+db.sqlite3
