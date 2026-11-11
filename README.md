@@ -1,49 +1,63 @@
-Smartdox 📁⚖️
-A web-based Files and Records Management System developed for the JSC Commercial Court. Smartdox streamlines the management, tracking, and retrieval of court files and records in a secure and efficient manner.
-🚀 Features
-Upload and manage court documents and files
-Secure user authentication and role-based access control
-Audit trail for tracking document activity
-Search and retrieve records quickly
-Document versioning and history
-🛠️ Tech Stack
-Layer
-Technology
-Backend
-Django (Python)
-Frontend
-React (JavaScript)
-Database
-SQLite (development)
-API
-Django REST Framework
-📁 Project Structure
-Smartdox/
-├── backend/        # Django REST API
-│   ├── accounts/   # User authentication & permissions
-│   ├── documents/  # Document management
-│   ├── audit/      # Audit trail
-│   └── smartdox/   # Project settings
-└── frontend/       # React application
-⚙️ Getting Started
-Prerequisites
-Python 3.x
-Node.js & npm
-Git
-Backend Setup
+# Smartdox
+
+A web-based files and records management system built for the JSC Commercial Court as a final year project. Smartdox helps manage, track and retrieve court files and records securely. All data in the demo system is fictional.
+
+## Features
+
+- Upload and manage documents and files
+- Secure user authentication with role-based access control
+- Audit trail that tracks document activity
+- Fast search and retrieval of records
+- Document versioning and history
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Backend | Django, Django REST Framework (Python) |
+| Frontend | React, Vite (JavaScript) |
+| Database | SQLite (development) |
+
+## Project Structure
+
+```
+Smartdox-/
+├── backend/            # Django REST API
+│   ├── accounts/       # Authentication and permissions
+│   ├── documents/      # Document management
+│   ├── audit/          # Audit trail
+│   └── smartdox/       # Project settings
+└── frontend/           # React application
+```
+
+## Getting Started
+
+Requirements: Python 3, Node.js with npm, Git.
+
+### Backend
+
+```
 cd backend
 pip install -r requirements.txt
+export DJANGO_SECRET_KEY="your-own-long-random-string"
 python manage.py migrate
 python manage.py runserver
-Frontend Setup
+```
+
+### Frontend
+
+```
 cd frontend
 npm install
 npm run dev
-🔐 Environment Variables
-Create a .env file in both backend/smartdox/ and frontend/ with the required environment variables. See .env.example for reference.
-👨‍💻 Author
-Simbarashe Ryan
-Final Year Project — JSC Commercial Court
-📄 License
-This project was developed as a final year project for the JSC Commercial Court. All rights reserved.O
+```
 
+## Security
+
+- The Django secret key is read from the `DJANGO_SECRET_KEY` environment variable and is not stored in the repo.
+- Access is controlled by user roles, and document actions are recorded in the audit trail.
+
+## Author
+
+Simbarashe Maponga
+GitHub: [SimbarasheRyan](https://github.com/SimbarasheRyan)
