@@ -7,3 +7,15 @@ backend/media/
 	
 __pycache__/
 db.sqlite3
+
+# Uploaded files and local data
+backend/media/
+db.sqlite3
+
+# Secrets
+.env
+*.env
+
+# Generated files
+__pycache__/
+node_modules/
